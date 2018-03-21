@@ -19,7 +19,7 @@ public class NetworkUtils {
     private final static String WEATHERDB_BASE_URL=
             "http://dataservice.accuweather.com/forecasts/v1/daily/5day/190795";
 
-    private final static String API_KEY="JUlCIjrcGoB71Vi1RgGLwwiGPooatana";
+    private final static String API_KEY="52JoPh1gnZJ1islbf3j5g3e8fvOP7CmY";
 
     private final static String METRIC_VALUE="true";
 
