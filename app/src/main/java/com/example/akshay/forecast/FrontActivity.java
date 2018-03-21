@@ -62,7 +62,7 @@ public class FrontActivity extends AppCompatActivity {
 
     public void find_weather(){
 
-        String url ="http://dataservice.accuweather.com/forecasts/v1/daily/1day/190795?apikey=JUlCIjrcGoB71Vi1RgGLwwiGPooatana&metric=true";
+        String url ="http://dataservice.accuweather.com/forecasts/v1/daily/1day/190795?apikey=52JoPh1gnZJ1islbf3j5g3e8fvOP7CmY&metric=true";
 
         JsonObjectRequest jor =new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
