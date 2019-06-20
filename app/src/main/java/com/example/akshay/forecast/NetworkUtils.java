@@ -14,7 +14,7 @@ public class NetworkUtils {
     private static final String TAG = "NetworkUtils";
     private final static String WEATHERDB_BASE_URL=
             "http://dataservice.accuweather.com/forecasts/v1/daily/5day/206470";
-    private final static String API_KEY="52JoPh1gnZJ1islbf3j5g3e8fvOP7CmY";
+    private final static String API_KEY="********************************";
     private final static String METRIC_VALUE="true";
     private final static String PARAM_API_KEY="apikey";
     private final static String PARAM_METRIC= "metric";
