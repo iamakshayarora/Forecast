@@ -51,7 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 if (marker != null) {
                     marker.remove();
                 }
-                String url ="http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=aQMG1AeQjo788PzhW44ajsd9XV4g7whU&q="+point.latitude+"%2C"+point.longitude;
+                String url ="http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=********************************&q="+point.latitude+"%2C"+point.longitude;
                 JsonObjectRequest jor =new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
@@ -71,7 +71,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 );
                 RequestQueue queue=  Volley.newRequestQueue(MapsActivity.this);
                 queue.add(jor);
-                String url2="http://dataservice.accuweather.com/forecasts/v1/daily/1day/"+key+"?apikey=aQMG1AeQjo788PzhW44ajsd9XV4g7whU&metric=true";
+                String url2="http://dataservice.accuweather.com/forecasts/v1/daily/1day/"+key+"?apikey=********************************&metric=true";
                 JsonObjectRequest jor2 =new JsonObjectRequest(Request.Method.GET, url2, null, new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
