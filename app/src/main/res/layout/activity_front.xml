@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimary"
+    android:background="#ffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.akshay.forecast.FrontActivity">
@@ -14,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="VELLORE"
+        android:text="KATPADI"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -24,8 +30,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/city"
-        android:layout_toEndOf="@+id/deg1"
-        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="85dp"
         android:text="INDIA"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="16dp"
@@ -48,131 +57,188 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/date"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/pic" />
+        app:srcCompat="@drawable/images" />
 
     <TextView
         android:id="@+id/maxtmp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="203dp"
         android:layout_marginLeft="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="174dp"
         android:text="35"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/deg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="282dp"
         android:layout_marginLeft="265dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="97dp"
         android:text="°C"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30dp"
-        android:textStyle=""/>
+        android:textStyle="" />
+
     <TextView
         android:id="@+id/maxtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="274dp"
         android:text="MAX"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/mintmp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/maxtmp"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="202dp"
         android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="175dp"
         android:text="21"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/deg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/maxtmp"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="283dp"
         android:layout_marginLeft="265dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="97dp"
         android:text="°C"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30dp"
-        android:textStyle=""/>
+        android:textStyle="" />
+
     <TextView
         android:id="@+id/mintxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/maxtxt"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="285dp"
         android:text="MIN"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/desctext"
-        android:layout_below="@id/mintxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Day    -"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_below="@id/mintxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
         android:layout_marginLeft="90dp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="278dp"
+        android:text="Day    -"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/desc"
-        android:layout_below="@id/mintxt"
-        android:layout_width="wrap_content"
+        android:layout_width="211dp"
         android:layout_height="wrap_content"
-        android:text="Sunny"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_below="@id/mintxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="173dp"
         android:layout_marginLeft="190dp"
-        android:textColor="@color/colorRed"/>
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="27dp"
+        android:text="Sunny"
+        android:textColor="@color/colorRed"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/desctext2"
-        android:layout_below="@id/desctext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Night -"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_below="@id/desctext"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
         android:layout_marginLeft="90dp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="198dp"
+        android:text="Night -"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/desc2"
-        android:layout_below="@id/desc"
-        android:layout_width="wrap_content"
+        android:layout_width="212dp"
         android:layout_height="wrap_content"
-        android:text="Cloudy"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_below="@id/desc"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="171dp"
         android:layout_marginLeft="190dp"
-        android:textColor="@color/colorRed"/>
+        android:layout_marginTop="41dp"
+        android:text="Cloudy"
+        android:textColor="@color/colorRed"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/but1"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/mintmp"
         android:layout_below="@+id/desc2"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/rounded_button"
         android:text="Upcoming"
         android:textColor="@color/colorBlue"
         android:textSize="20dp"
         android:textStyle="bold" />
 </RelativeLayout>
-
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+</android.support.v4.widget.DrawerLayout>

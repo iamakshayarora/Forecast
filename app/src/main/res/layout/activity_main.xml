@@ -9,7 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:background="@color/colorPrimaryDark"
-    tools:context="com.example.akshay.forecast.Main2Activity">
+    tools:context="com.example.akshay.forecast.MainActivity">
 
     <TextView
         android:id="@+id/textView"
