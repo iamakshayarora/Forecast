@@ -19,7 +19,7 @@ public class NetworkUtils2 {
     private final static String WEATHERDB_BASE_URL=
             "http://dataservice.accuweather.com/locations/v1/cities/search?";
 
-    private final static String API_KEY="52JoPh1gnZJ1islbf3j5g3e8fvOP7CmY";
+    private final static String API_KEY="********************************";
 
     private final static String METRIC_VALUE="true";
 
